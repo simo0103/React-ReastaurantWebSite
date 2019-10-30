@@ -1,0 +1,35 @@
+header {
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+    background: #000000b5;
+
+    .logo {
+        img {
+            width: 90px;
+        }
+    }
+    nav {
+       width: 90%;
+       margin: 0 auto;
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+           
+            li {
+                text-transform: uppercase;
+                padding: 20px 0;
+                a {
+                    color: white;
+                    &.active {
+                        border-bottom: 1px solid white;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    
+}

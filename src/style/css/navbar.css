@@ -1,0 +1,46 @@
+header {
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  background: #000000b5;
+}
+
+header .logo img {
+  width: 90px;
+}
+
+header nav {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+header nav ul li a {
+  color: white;
+}
+
+header nav ul li a.active {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=navbar.css.map */
