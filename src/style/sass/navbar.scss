@@ -3,21 +3,29 @@ header {
     z-index: 200;
     width: 100%;
     background: #000000b5;
-
-    .logo {
-        img {
-            width: 90px;
-        }
+    .logo {       
+        width: 90px;      
     }
     nav {
        width: 90%;
        margin: 0 auto;
+       .navLogo {
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+        .hamburger,
+        .close {
+            width: 25px;
+        }
+       }
         ul {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
             align-items: center;
-           
+            .desktopView & {
+                flex-direction: row;
+            }
             li {
                 text-transform: uppercase;
                 padding: 20px 0;

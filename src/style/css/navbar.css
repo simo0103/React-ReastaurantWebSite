@@ -5,7 +5,7 @@ header {
   background: #000000b5;
 }
 
-header .logo img {
+header .logo {
   width: 90px;
 }
 
@@ -14,7 +14,7 @@ header nav {
   margin: 0 auto;
 }
 
-header nav ul {
+header nav .navLogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,9 +25,34 @@ header nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+header nav .navLogo .hamburger,
+header nav .navLogo .close {
+  width: 25px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.desktopView header nav ul {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 header nav ul li {

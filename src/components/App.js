@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { isMobileOnly, isTablet } from 'react-device-detect';
 import NavBar from './NavBar';
 import Main from './Main';
 // const App = () => (
@@ -9,8 +10,10 @@ import Main from './Main';
 // )
 class App extends Component {
   render() {
+    const viewportClass = isMobileOnly ? "mobileView" : isTablet ? "tabletView" : "desktopView";
+
     return (
-      <div className="App">
+      <div id="App" className={ viewportClass }>
         <NavBar />
         <Main />
       </div>
