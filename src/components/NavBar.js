@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import { NavLink } from "react-router-dom";
 import { isMobile } from 'react-device-detect';
 //sass
@@ -12,8 +12,7 @@ class NavBar extends Component {
   render() {
    // var isActive = this.context.router.route.location.pathname === this.props.to;
     var classActive =  'active';
-    const [open, setOpen] = useState(false);
-
+    //const [open, setOpen] = useState(false);
 
     const MobileNav = (props) =>
         <nav>
@@ -21,12 +20,12 @@ class NavBar extends Component {
             <NavLink activeClassName='' to='/'>
               <img className="logo" src={logo} alt="logo"/>
             </NavLink>
-          <div open={open} onClick={() => setOpen(!open)}>
+          <div>
               <img className="hamburger" src={hamburger} alt="open menu"/>
               <img className="close" src={close} alt="close menu"/>
             </div>
           </div>
-          <ul open={open} setOpen={setOpen}>                
+          <ul>                
               <li><NavLink activeClassName={classActive} exact={true} to='/'>Home</NavLink></li>
               <li><NavLink activeClassName={classActive} to='/cucina'>La cucina</NavLink></li>
               <li><NavLink activeClassName={classActive} to='/bar'>il bar</NavLink></li>
