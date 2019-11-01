@@ -1,0 +1,31 @@
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #EBEAE8;
+}
+
+img {
+  width: 100%;
+}
+
+#sitePage {
+  margin-top: 60px;
+}
+
+.desktopView #sitePage {
+  margin-top: 100px;
+}
+/*# sourceMappingURL=index.css.map */

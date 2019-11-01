@@ -6,12 +6,12 @@ import '../../style/css/home.css';
 
 class Home extends Component {
   render() {
-    const MobileImg = (props) => <img src={mobileBackground} alt="herobanner"/>;
-    const DesktopImg = (props) => <img src={desktopBackground} alt="herobanner"/>;
+    const MobileImg = (props) => <img src={mobileBackground} alt="herobanner" className="heroBanner"/>;
+    const DesktopImg = (props) => <img src={desktopBackground} alt="herobanner" className="heroBanner"/>;
     let RenderBackgroundImg = (props) => isMobileOnly ? <MobileImg/> : <DesktopImg/>
 
     return (
-      <div className="Home">
+      <div id="sitePage" className="Home">
         <RenderBackgroundImg/>       
       </div>
         

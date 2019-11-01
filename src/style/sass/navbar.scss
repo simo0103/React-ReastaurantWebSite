@@ -3,41 +3,77 @@ header {
     z-index: 200;
     width: 100%;
     background: #000000b5;
-    .logo {       
-        width: 90px;      
+    top: 0;
+
+    .logo {
+        width: 90px;
     }
-    nav {
-       width: 90%;
-       margin: 0 auto;
-       .navLogo {
-           display: flex;
-           flex-direction: row;
-           justify-content: space-between;
-        .hamburger,
-        .close {
-            width: 25px;
+    li {
+        text-transform: uppercase;
+        padding: 20px 0;
+
+        a {
+            color: white;
+
+            &.active {
+                border-bottom: 1px solid white;
+                padding-bottom: 10px;
+            }
         }
-       }
+    }
+
+    nav.desktopNav {
         ul {
             display: flex;
-            flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            .desktopView & {
-                flex-direction: row;
-            }
-            li {
-                text-transform: uppercase;
-                padding: 20px 0;
-                a {
-                    color: white;
-                    &.active {
-                        border-bottom: 1px solid white;
-                        padding-bottom: 10px;
+            width: 90%;
+            margin: 0 auto;
+            height: 100px;
+        }
+    }
+
+    nav.mobileNav {
+        .navLogo {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            #menuHandler {
+                .hamburger,
+                .close {
+                    width: 25px;
+                }
+                &.closed {
+                    .close {
+                        display: none;
+                    }
+                    .hamburger {
+                        display: block;
+                    }
+                }
+                &.open {
+                    .hamburger {
+                        display: none;
+                    }
+                    .close {
+                        display: block;
                     }
                 }
             }
         }
+
+        ul {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            &.open {
+                display: flex;
+            }        
+        }
     }
-    
 }

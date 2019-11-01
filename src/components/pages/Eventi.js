@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Eventi extends Component {
   render() {
     return (
-      <div className="Eventi">
+      <div id="sitePage" className="Eventi">
        <p>sono Eventi</p>
       </div>
     );

@@ -8,10 +8,6 @@ import Galleria from './pages/Galleria';
 import Sport from './pages/Sport';
 import Eventi from './pages/Eventi';
 
-
-
-
-
 class Main extends Component {
   render() {
     return (
