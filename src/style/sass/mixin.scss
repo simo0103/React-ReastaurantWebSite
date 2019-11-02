@@ -1,0 +1,20 @@
+@mixin flex-direction($direction, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: space-between;
+    align-items: $align;
+}
+
+@mixin width-margin($width) {
+    width: $width;
+    margin: 0 auto;
+}
+
+@mixin RobotoFont() {
+    font-family: 'Roboto Condensed', sans-serif;
+} 
+@mixin RobotoUpper($weight) {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: $weight;
+}   

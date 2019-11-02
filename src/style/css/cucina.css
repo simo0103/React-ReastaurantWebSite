@@ -1,0 +1,75 @@
+.Cucina .mainContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Cucina .mainContainer .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px solid darkgrey;
+}
+
+.Cucina .mainContainer button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Cucina .mainContainer button img {
+  width: 10px;
+}
+
+.Cucina .mainContainer .list li {
+  padding: 10px 0;
+  border-bottom: 1px solid darkgrey;
+}
+
+.Cucina .mainContainer .list li.category {
+  text-align: center;
+}
+
+.Cucina .mainContainer .list li.category, .Cucina .mainContainer .list li .name {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Cucina .mainContainer .list li > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+/*# sourceMappingURL=cucina.css.map */

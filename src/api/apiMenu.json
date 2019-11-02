@@ -1,5 +1,14 @@
 
   {
+    "primi": [
+      { "id": 1, "categoria": "pasta di semola", "name": "pasta e fagioli", "price": 10, "ingredienti": "pasta, cipolla, fagioli" },
+      { "id": 2, "categoria": "pasta di semola", "name": "spaghetti alla carbonara", "price": 10, "ingredienti": "spaghetti, uovo, guanciale" },
+      { "id": 3, "categoria": "pasta di semola", "name": "pasta e fagioli", "price": 4, "ingredienti": "pasta, cipolla, fagioli" },
+      { "id": 1, "categoria": "pasta fresca all'uovo", "name": "tagliatelle panna prosciutto e piselli", "price": 10, "ingredienti": "pasta, cipolla, fagioli" },
+      { "id": 2, "categoria": "pasta fresca all'uovo", "name": "tortellini goccia d'oro", "price": 10, "ingredienti": "spaghetti, uovo, guanciale" },
+      { "id": 3, "categoria": "pasta fresca all'uovo", "name": "gnocchi al gorgonzola", "price": 4, "ingredienti": "pasta, cipolla, fagioli" }
+  ],
+  
     "pizze": [
         { "id": 1, "name": "Margherita", "price": 4 },
         { "id": 2, "name": "Diavola", "price": 5 },

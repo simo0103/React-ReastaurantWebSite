@@ -1,0 +1,37 @@
+@import "./mixin.scss";
+
+.Cucina {
+    .mainContainer {
+        @include width-margin(90%);
+        .title {
+            @include flex-direction(row, center);
+            @include RobotoUpper(bold);
+            padding-bottom: 10px;
+            border-bottom: 1px solid darkgrey;
+        }
+        button {
+            @include flex-direction(row, center);
+            img {
+                width: 10px;
+            }
+        }
+        .list {
+           
+            li {
+                padding: 10px 0;
+                border-bottom: 1px solid darkgrey;
+                &.category {
+                    text-align: center;
+                }
+                &.category, .name {
+                    @include RobotoUpper(bold);
+                }
+                >div {
+                    @include flex-direction(row, null);     
+                    margin-bottom: 5px;           
+                }
+
+            }
+        }
+    }
+}

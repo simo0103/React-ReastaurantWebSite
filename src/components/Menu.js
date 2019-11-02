@@ -4,13 +4,10 @@ import { Link } from 'react-router-dom';
 import '../style/css/menu.css';
 //https://css-tricks.com/understanding-react-setstate/
 class Menu extends Component {
-  
-  state = { itemList: [], pricelist: [] }
 
   
 //https://medium.freecodecamp.org/get-pro-with-react-setstate-in-10-minutes-d38251d1c781
 
- 
   render() {
  
     return (
