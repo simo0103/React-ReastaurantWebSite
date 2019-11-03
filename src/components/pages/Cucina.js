@@ -4,7 +4,7 @@ import '../../style/css/main.css';
 import '../../style/css/cucina.css';
 import cucinaImg from '../../images/desktop/food.jpg';
 import arrowDown from '../../images/svg/arrD.svg';
-
+import data from "./menulist";
 
 class Cucina extends Component {
   constructor(props) {
@@ -33,8 +33,22 @@ class Cucina extends Component {
             </button>
             
           </div>  
-          <div>
-              <ul>
+          <ul>
+            {
+              data.menuCucina.map((menu, i)=>{
+                return (
+                  <li key={i}>{menu.tipo}      
+                    { menu.lista.map(data => <span key={i}>{data.categoria}</span> )}     
+                    <span>
+                    {/* { menu.lista.piatti.map(piatti => <li key={i}>{piatti.name}</li> )}     */}
+                    </span>            
+                  </li>
+                )
+              })
+            }
+          </ul>
+
+              {/* <ul>
                 <li>primi
                   <ul className="list">          
                   {
@@ -76,9 +90,9 @@ class Cucina extends Component {
                 </ul>
               </li>
               <li>pizze</li>
-              </ul>
+            </ul> */}
 
-            </div>   
+               
         </div>
 
       </div>
