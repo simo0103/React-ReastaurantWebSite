@@ -48,22 +48,21 @@
   width: 10px;
 }
 
-.Cucina .mainContainer .list li {
-  border-bottom: 1px solid darkgrey;
-}
-
-.Cucina .mainContainer .list li .category {
+.Cucina .mainContainer .list .category {
   display: block;
   text-align: center;
   padding: 40px 0 15px;
-  border-bottom: 1px solid darkgrey;
   font-size: 17px;
 }
 
-.Cucina .mainContainer .list li .category, .Cucina .mainContainer .list li .name {
+.Cucina .mainContainer .list .category, .Cucina .mainContainer .list .name {
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.Cucina .mainContainer .list li {
+  border-bottom: 1px solid darkgrey;
 }
 
 .Cucina .mainContainer .list li > div {

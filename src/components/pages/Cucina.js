@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Api from '../../api/api';
 import '../../style/css/main.css';
 import '../../style/css/cucina.css';
 import cucinaImg from '../../images/desktop/food.jpg';
@@ -14,7 +13,7 @@ class Cucina extends Component {
     };
   }
   render() {
-    
+    const menuData = data.menuCucina;
     return (
       <div id="sitePage" className="Cucina">
         <div className="imgContainer">
@@ -35,63 +34,33 @@ class Cucina extends Component {
           </div>  
           <ul>
             {
-              data.menuCucina.map((menu, i)=>{
-                return (
-                  <li key={i}>{menu.tipo}      
-                    { menu.lista.map(data => <span key={i}>{data.categoria}</span> )}     
-                    <span>
-                    {/* { menu.lista.piatti.map(piatti => <li key={i}>{piatti.name}</li> )}     */}
-                    </span>            
+              menuData.map((menu, i)=> {
+                return (               
+                  <li key={i} className={menu.tipo}>{menu.tipo}      
+                    { 
+                      menu.lista.map((data,i) => { 
+                        return (
+                          <ul className="list" key={i}>
+                          <span className="category"> {data.categoria} </span>                        
+                            { data.piatti.map((piatti,i) => 
+                              <li className="piatti" key={i}>
+                                <div>
+                                  <span className="name">{piatti.name}</span>
+                                  <span>{piatti.price}</span>
+                                </div>
+                                <span className="ingredienti">{piatti.ingredienti}</span>
+                              </li>                            
+                            )}                         
+                          </ul>                       
+                        ) 
+                      })
+                    }     
+                              
                   </li>
                 )
               })
             }
           </ul>
-
-              {/* <ul>
-                <li>primi
-                  <ul className="list">          
-                  {
-                    Api.allPrimiPiatti().map(pp => (
-                      //mettergli il key senno da errore in console
-                      
-                      <li key={pp.id}>
-                      
-                      <span className={pp.classname}>{pp.categoria}</span>
-                        <div>
-                          <span className="name">{pp.name}</span>
-                          <span className="price">{pp.price}€</span> 
-                        </div>                
-                        <span className="ingredienti">{pp.ingredienti}</span> 
-                      
-                      </li>
-                    ))
-                  }
-                  </ul>
-                </li>
-                <li>hamburger
-                  <ul className="list hamburger">
-                  {
-                    Api.allPanini().map(pn => (
-                      //mettergli il key senno da errore in console
-                      
-                      <li key={pn.id}>
-                      
-                      <span className={pn.classname}>{pn.categoria}</span>
-                        <div>
-                          <span className="name">{pn.name}</span>
-                          <span className="price">{pn.price}€</span> 
-                        </div>                
-                        <span className="ingredienti">{pn.ingredienti}</span> 
-                        
-                      </li>
-                    ))
-                  }
-                </ul>
-              </li>
-              <li>pizze</li>
-            </ul> */}
-
                
         </div>
 

@@ -19,19 +19,19 @@
             }
         }
         .list {
-           
+            .category {
+                display: block;
+                text-align: center;
+                padding: 40px 0 15px;
+               
+                font-size: 17px;
+            }
+            .category, .name {
+                @include RobotoUpper(bold);
+            }
             li {
                 border-bottom: 1px solid darkgrey;     
-                .category {
-                    display: block;
-                    text-align: center;
-                    padding: 40px 0 15px;
-                    border-bottom: 1px solid darkgrey; 
-                    font-size: 17px;
-                }
-                .category, .name {
-                    @include RobotoUpper(bold);
-                }
+              
                 >div {
                     @include flex-direction(row, null);     
                     padding: 10px 0;           
