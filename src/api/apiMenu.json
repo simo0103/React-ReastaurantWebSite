@@ -1,12 +1,12 @@
 
   {
     "primi": [
-      { "id": 1, "categoria": "pasta di semola", "name": "pasta e fagioli", "price": 10, "ingredienti": "pasta, cipolla, fagioli" },
-      { "id": 2, "categoria": "pasta di semola", "name": "spaghetti alla carbonara", "price": 10, "ingredienti": "spaghetti, uovo, guanciale" },
-      { "id": 3, "categoria": "pasta di semola", "name": "pasta e fagioli", "price": 4, "ingredienti": "pasta, cipolla, fagioli" },
-      { "id": 1, "categoria": "pasta fresca all'uovo", "name": "tagliatelle panna prosciutto e piselli", "price": 10, "ingredienti": "pasta, cipolla, fagioli" },
-      { "id": 2, "categoria": "pasta fresca all'uovo", "name": "tortellini goccia d'oro", "price": 10, "ingredienti": "spaghetti, uovo, guanciale" },
-      { "id": 3, "categoria": "pasta fresca all'uovo", "name": "gnocchi al gorgonzola", "price": 4, "ingredienti": "pasta, cipolla, fagioli" }
+      { "id": 1, "classname":"category", "categoria": "pasta di semola", "name": "pasta e fagioli", "price": 10, "ingredienti": "pasta, cipolla, fagioli" },
+      { "id": 2, "categoria": "", "name": "spaghetti alla carbonara", "price": 10, "ingredienti": "spaghetti, uovo, guanciale" },
+      { "id": 3, "categoria": "", "name": "pasta e fagioli", "price": 4, "ingredienti": "pasta, cipolla, fagioli" },
+      { "id": 4, "classname":"category", "categoria": "pasta fresca all'uovo", "name": "tagliatelle panna prosciutto e piselli", "price": 10, "ingredienti": "pasta, cipolla, fagioli" },
+      { "id": 5, "categoria": "", "name": "tortellini goccia d'oro", "price": 10, "ingredienti": "spaghetti, uovo, guanciale" },
+      { "id": 6, "categoria": "", "name": "gnocchi al gorgonzola", "price": 4, "ingredienti": "pasta, cipolla, fagioli" }
   ],
   
     "pizze": [
@@ -14,10 +14,13 @@
         { "id": 2, "name": "Diavola", "price": 5 },
         { "id": 3, "name": "Quattro Stagioni", "price": 5.50 }
     ],
-    "hamburgers": [
-        { "id": 1, "name": "Cheeseburger", "price": 7 },
+    "panini": [
+        { "id": 1, "classname":"category", "categoria": "hamburger", "name": "Cheeseburger", "price": 7 },
         { "id": 2, "name": "Hotburger", "price": 6 },
-        { "id": 3, "name": "Baconbuger", "price": 8 }
+        { "id": 3, "name": "Baconbuger", "price": 8 },
+        { "id": 4, "classname":"category", "categoria": "panini caldi", "name": "Dragon Dart", "price": 7 },
+        { "id": 5, "name": "red lion", "price": 6 },
+        { "id": 6, "name": "daily", "price": 8 }
     ]
   }  
 

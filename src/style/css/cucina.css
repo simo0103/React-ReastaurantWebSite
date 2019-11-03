@@ -24,6 +24,10 @@
   border-bottom: 1px solid darkgrey;
 }
 
+.Cucina .mainContainer .title > span {
+  font-size: 18px;
+}
+
 .Cucina .mainContainer button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,15 +49,18 @@
 }
 
 .Cucina .mainContainer .list li {
-  padding: 10px 0;
   border-bottom: 1px solid darkgrey;
 }
 
-.Cucina .mainContainer .list li.category {
+.Cucina .mainContainer .list li .category {
+  display: block;
   text-align: center;
+  padding: 40px 0 15px;
+  border-bottom: 1px solid darkgrey;
+  font-size: 17px;
 }
 
-.Cucina .mainContainer .list li.category, .Cucina .mainContainer .list li .name {
+.Cucina .mainContainer .list li .category, .Cucina .mainContainer .list li .name {
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
@@ -70,6 +77,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 5px;
+  padding: 10px 0;
+}
+
+.Cucina .mainContainer .list li .ingredienti {
+  display: block;
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=cucina.css.map */

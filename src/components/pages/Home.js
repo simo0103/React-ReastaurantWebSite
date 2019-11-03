@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { isMobileOnly } from 'react-device-detect';
-import desktopBackground from '../../images/desktop/salafreccette.jpg';
+import desktopBackground from '../../images/desktop/salafreccette.png';
 import mobileBackground from '../../images/mobile/banner-mobile.png';
 import '../../style/css/home.css';
 

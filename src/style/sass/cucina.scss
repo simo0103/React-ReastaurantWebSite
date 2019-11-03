@@ -8,6 +8,9 @@
             @include RobotoUpper(bold);
             padding-bottom: 10px;
             border-bottom: 1px solid darkgrey;
+            >span {
+                font-size: 18px;
+            }
         }
         button {
             @include flex-direction(row, center);
@@ -18,17 +21,24 @@
         .list {
            
             li {
-                padding: 10px 0;
-                border-bottom: 1px solid darkgrey;
-                &.category {
+                border-bottom: 1px solid darkgrey;     
+                .category {
+                    display: block;
                     text-align: center;
+                    padding: 40px 0 15px;
+                    border-bottom: 1px solid darkgrey; 
+                    font-size: 17px;
                 }
-                &.category, .name {
+                .category, .name {
                     @include RobotoUpper(bold);
                 }
                 >div {
                     @include flex-direction(row, null);     
-                    margin-bottom: 5px;           
+                    padding: 10px 0;           
+                }
+                .ingredienti {
+                    display: block;
+                    padding-bottom: 10px;
                 }
 
             }

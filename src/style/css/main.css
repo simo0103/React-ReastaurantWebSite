@@ -3,9 +3,9 @@ button {
   background-color: #82370A;
   text-transform: uppercase;
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   padding: 10px;
-  min-width: 100px;
+  min-width: 120px;
 }
 
 .imgContainer {

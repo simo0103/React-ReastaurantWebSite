@@ -4,6 +4,6 @@ import apiMenu from "./apiMenu.json" ;
 const MenuAPI = {
     allPrimiPiatti: function() {return apiMenu.primi},
     allPizza: function() { return apiMenu.pizze },
-    allHamburger: function() { return apiMenu.hamburgers }
+    allPanini: function() { return apiMenu.panini }
 }
 export default MenuAPI;
