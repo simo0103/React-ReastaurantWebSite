@@ -6,16 +6,31 @@ import arrowDown from '../../images/svg/arrD.svg';
 import data from "./menulist";
 
 class Cucina extends Component {
+  
   constructor(props) {
     super(props);
+    this.handleClick = this.handleClick.bind(this);
+
     this.state = {
-      selected: false
+      selected: false,
+      typeClicked: null
     };
+   
   }
+  handleClick(tipo) {
+    this.setState({ typeClicked: tipo });
+  }
+
+
   render() {
     const menuData = data.menuCucina;
+    const cliccato = this.state.typeClicked;
+    console.log(cliccato)
+   // const menuData = data.menuCucina.filter(d => d.tipo === "primi");
+    
     return (
       <div id="sitePage" className="Cucina">
+       
         <div className="imgContainer">
           <img src={cucinaImg} alt="herobanner" className="heroBanner"/>
         </div>
@@ -24,19 +39,36 @@ class Cucina extends Component {
           ut labore  et dolore magna aliqua. 
         </p>
         <div className="mainContainer">
+        cliccato : {this.state.typeClicked};
           <div className="title">
             <span>primi piatti</span>
-            <button>
-              <span>cambia menu</span>
-              <span><img src={arrowDown} alt="arrow down select from menu" className="arrowDown"/></span>
-            </button>
+            <div className="buttonList">
+              <button>
+                <span>cambia menu</span>
+                <span><img src={arrowDown} alt="arrow down select from menu" className="arrowDown"/></span>
+              </button>
+              <ul>
+                {
+                  menuData.map((menu, i) => {
+                    const tipo = menu.tipo;
+                    console.log(tipo)
+                    return (
+                      <li key={i}onClick={() => this.handleClick(tipo)}>{tipo}</li>
+                    )
+                  })
+                }
+              
+              </ul>
+
+            </div>
             
           </div>  
           <ul>
             {
               menuData.map((menu, i)=> {
-                return (               
-                  <li key={i} className={menu.tipo}>{menu.tipo}      
+                return ( 
+                              
+                  <li key={i} className={menu.tipo}>
                     { 
                       menu.lista.map((data,i) => { 
                         return (

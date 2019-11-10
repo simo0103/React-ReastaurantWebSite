@@ -13,6 +13,11 @@ header .logo {
 header li {
   text-transform: uppercase;
   padding: 20px 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid whitesmoke;
+  background-color: black;
 }
 
 header li a {

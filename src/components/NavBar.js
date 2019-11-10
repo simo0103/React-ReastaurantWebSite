@@ -27,7 +27,7 @@ class NavBar extends Component {
             <NavLink activeClassName='' to='/'>
               <img className="logo" src={logo} alt="logo"/>
             </NavLink>
-          <div id="menuHandler" className={this.state.open ? classOpen : 'closed'} 
+            <div id="menuHandler" className={this.state.open ? classOpen : 'closed'} 
                onClick={ () => this.setState({open: !this.state.open}) }>
               <img className="hamburger" src={hamburger} alt="open menu"/ >
               <img className="close" src={close} alt="close menu"/>
