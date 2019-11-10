@@ -13,6 +13,9 @@ header .logo {
 header li {
   text-transform: uppercase;
   padding: 20px 0;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 header li a {
@@ -96,5 +99,10 @@ header nav.mobileNav ul.open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+header nav.mobileNav ul li {
+  border-bottom: 1px solid whitesmoke;
+  background-color: black;
 }
 /*# sourceMappingURL=navbar.css.map */

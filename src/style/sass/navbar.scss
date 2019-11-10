@@ -11,6 +11,10 @@ header {
     li {
         text-transform: uppercase;
         padding: 20px 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+       
 
         a {
             color: white;
@@ -73,7 +77,11 @@ header {
 
             &.open {
                 display: flex;
-            }        
+            }   
+            li {
+                border-bottom: 1px solid whitesmoke;
+                background-color: black;
+            }     
         }
     }
 }

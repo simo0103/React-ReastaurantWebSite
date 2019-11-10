@@ -1,0 +1,81 @@
+{
+    "menuCucina": [{
+        "tipo": "primi piatti",
+        "lista": [{
+
+                "categoria": "pasta di semola",
+                "piatti": [{
+                        "id": 1,
+                        "name": "spaghetti alla carbonara",
+                        "price": 10,
+                        "ingredienti": "spaghetti, uovo, guanciale"
+                    },
+                    {
+                        "id": 2,
+                        "name": "spaghetti alla matriciana",
+                        "price": 10,
+                        "ingredienti": "spaghetti, pomodoro, guanciale"
+                    }
+                ]
+
+            },
+            {
+                "categoria": "pasta fresca",
+                "piatti": [{
+                        "id": 1,
+                        "name": "tortelloni",
+                        "price": 10,
+                        "ingredienti": "spaghetti, uovo, guanciale"
+                    },
+                    {
+                        "id": 2,
+                        "name": "tagliatelle",
+                        "price": 10,
+                        "ingredienti": "spaghetti, pomodoro, guanciale"
+                    }
+                ]
+
+            }
+        ]
+
+    }, {
+        "tipo": "panini",
+        "lista": [{
+              
+                "categoria": "panini caldi",
+                "piatti": [{
+                        "id": 1,
+                        "name": "dragon dart",
+                        "price": 10,
+                        "ingredienti": "bresaola, rucola"
+                    },
+                    {
+                        "id": 2,
+                        "name": "red lion",
+                        "price": 10,
+                        "ingredienti": "cotto, pomodoro"
+                    }
+                ]
+
+
+            },
+            {
+                "categoria": "hamburger",
+                "piatti": [{
+                        "id": 1,
+                        "name": "cheeseburger",
+                        "price": 10,
+                        "ingredienti": "bresaola, rucola"
+                    },
+                    {
+                        "id": 2,
+                        "name": "hotburger",
+                        "price": 10,
+                        "ingredienti": "cotto, pomodoro"
+                    }
+                ]
+            }
+        ]
+    }]
+
+}

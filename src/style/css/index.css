@@ -20,12 +20,4 @@ body {
 img {
   width: 100%;
 }
-
-#sitePage {
-  margin-top: 60px;
-}
-
-.desktopView #sitePage {
-  margin-top: 100px;
-}
 /*# sourceMappingURL=index.css.map */
