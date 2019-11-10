@@ -4,30 +4,32 @@ import '../../style/css/cucina.css';
 import cucinaImg from '../../images/desktop/food.jpg';
 import arrowDown from '../../images/svg/arrD.svg';
 import data from "./menulist";
+import { runInThisContext } from 'vm';
 
 class Cucina extends Component {
   
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
-
+    this.handleClick = this.handleClick.bind(this);    
     this.state = {
-      selected: false,
-      typeClicked: null
+      prevClicked: null,
+      typeClicked: null,
+      open: false
     };
    
   }
   handleClick(tipo) {
-    this.setState({ typeClicked: tipo });
-  }
-
-
-  render() {
-    const menuData = data.menuCucina;
+    this.setState({ typeClicked : tipo });
     const cliccato = this.state.typeClicked;
-    console.log(cliccato)
-   // const menuData = data.menuCucina.filter(d => d.tipo === "primi");
-    
+    this.setState({ prevClicked : cliccato})
+    const currentState = this.state.open;
+    this.setState({ open: !currentState });
+  }
+ 
+  render() {
+    const menuData = data.menuCucina,
+          classOpen = 'open';
+  
     return (
       <div id="sitePage" className="Cucina">
        
@@ -39,40 +41,25 @@ class Cucina extends Component {
           ut labore  et dolore magna aliqua. 
         </p>
         <div className="mainContainer">
-        cliccato : {this.state.typeClicked};
-          <div className="title">
-            <span>primi piatti</span>
-            <div className="buttonList">
-              <button>
-                <span>cambia menu</span>
-                <span><img src={arrowDown} alt="arrow down select from menu" className="arrowDown"/></span>
-              </button>
-              <ul>
-                {
-                  menuData.map((menu, i) => {
-                    const tipo = menu.tipo;
-                    console.log(tipo)
-                    return (
-                      <li key={i}onClick={() => this.handleClick(tipo)}>{tipo}</li>
-                    )
-                  })
-                }
-              
-              </ul>
-
-            </div>
-            
-          </div>  
-          <ul>
+        cliccato ora : {this.state.typeClicked};
+        cliccato prima : {this.state.prevClicked}
+          <ul className="menuDynamicList">
             {
               menuData.map((menu, i)=> {
+                const tipo = menu.tipo,
+                      classOpenClose = this.state.typeClicked ? "open" : this.state.prevClicked ? "closed" : "closed";
                 return ( 
-                              
-                  <li key={i} className={menu.tipo}>
+                 
+                  <li key={i} className={ classOpenClose } 
+                  onClick={() => this.handleClick(tipo)}>
+                    <div className="title">
+                      <span>{menu.tipo}</span>                
+                      <img src={arrowDown} alt="arrow down select from menu" className="arrowDown"/>        
+                    </div> 
                     { 
                       menu.lista.map((data,i) => { 
                         return (
-                          <ul className="list" key={i}>
+                          <ul className="list category" key={i}>
                           <span className="category"> {data.categoria} </span>                        
                             { data.piatti.map((piatti,i) => 
                               <li className="piatti" key={i}>

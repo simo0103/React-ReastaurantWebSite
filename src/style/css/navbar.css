@@ -16,8 +16,6 @@ header li {
   display: block;
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid whitesmoke;
-  background-color: black;
 }
 
 header li a {
@@ -101,5 +99,10 @@ header nav.mobileNav ul.open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+header nav.mobileNav ul li {
+  border-bottom: 1px solid whitesmoke;
+  background-color: black;
 }
 /*# sourceMappingURL=navbar.css.map */

@@ -8,18 +8,10 @@ button {
   min-width: 120px;
 }
 
-.imgContainer {
-  height: 200px;
-}
-
-.imgContainer .heroBanner {
-  position: absolute;
-  top: 0;
-}
-
 p {
   text-align: center;
   font-size: 15px;
   line-height: 2em;
+  margin: 25px 0;
 }
 /*# sourceMappingURL=main.css.map */
