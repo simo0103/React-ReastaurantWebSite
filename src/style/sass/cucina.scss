@@ -8,28 +8,28 @@
             @include RobotoUpper(bold);
             padding: 10px 0;
             border-bottom: 1px solid darkgrey;
+            font-size: 20px;
             img {
                 width: 20px;
             }
         }
 
         .menuDynamicList  {
-            li {
-                &.closed {
-                    max-height: 40px;
-                    overflow: hidden;
-                    transition: max-height .5s linear;
-                    border-bottom: 1px solid darkgray;
+            >li {
+                margin-bottom: 20px;               
 
-                    
-                    
-                }
-                &.open {
-                    max-height: 500px;
-                    overflow: hidden;
-                    transition: max-height .5s linear;
+                // &.closed {
+                //     max-height: 40px;
+                //     overflow: hidden;
+                //     transition: max-height .5s linear;
+                //     border-bottom: 1px solid darkgray;   
+                // }
+                // &.open {
+                //     max-height: 500px;
+                //     overflow: hidden;
+                //     transition: max-height .5s linear;
 
-                }
+                // }
             }
         }
     
@@ -37,8 +37,7 @@
             .category {
                 display: block;
                 text-align: center;
-                padding: 40px 0 15px;
-               
+                padding: 40px 0 15px;             
                 font-size: 17px;
             }
             .category, .name {

@@ -22,25 +22,15 @@
   font-weight: bold;
   padding: 10px 0;
   border-bottom: 1px solid darkgrey;
+  font-size: 20px;
 }
 
 .Cucina .mainContainer .title img {
   width: 20px;
 }
 
-.Cucina .mainContainer .menuDynamicList li.closed {
-  max-height: 40px;
-  overflow: hidden;
-  -webkit-transition: max-height .5s linear;
-  transition: max-height .5s linear;
-  border-bottom: 1px solid darkgray;
-}
-
-.Cucina .mainContainer .menuDynamicList li.open {
-  max-height: 500px;
-  overflow: hidden;
-  -webkit-transition: max-height .5s linear;
-  transition: max-height .5s linear;
+.Cucina .mainContainer .menuDynamicList > li {
+  margin-bottom: 20px;
 }
 
 .Cucina .mainContainer .list .category {

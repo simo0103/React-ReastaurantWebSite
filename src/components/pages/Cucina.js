@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import '../../style/css/main.css';
 import '../../style/css/cucina.css';
 import cucinaImg from '../../images/desktop/food.jpg';
-import arrowDown from '../../images/svg/arrD.svg';
+//import arrowDown from '../../images/svg/arrD.svg';
 import data from "./menulist";
-import { runInThisContext } from 'vm';
 
 class Cucina extends Component {
   
@@ -41,20 +40,20 @@ class Cucina extends Component {
           ut labore  et dolore magna aliqua. 
         </p>
         <div className="mainContainer">
-        cliccato ora : {this.state.typeClicked};
-        cliccato prima : {this.state.prevClicked}
+        {/* cliccato ora : {this.state.typeClicked};
+        cliccato prima : {this.state.prevClicked} */}
           <ul className="menuDynamicList">
             {
               menuData.map((menu, i)=> {
-                const tipo = menu.tipo,
-                      classOpenClose = this.state.typeClicked ? "open" : this.state.prevClicked ? "closed" : "closed";
+                const tipo = menu.tipo;
+               // const classOpenClose = this.state.typeClicked ? "open" : this.state.prevClicked ? "closed" : "closed";
                 return ( 
                  
-                  <li key={i} className={ classOpenClose } 
+                  <li key={i}
                   onClick={() => this.handleClick(tipo)}>
                     <div className="title">
                       <span>{menu.tipo}</span>                
-                      <img src={arrowDown} alt="arrow down select from menu" className="arrowDown"/>        
+                      {/* <img src={arrowDown} alt="arrow down select from menu" className="arrowDown"/>         */}
                     </div> 
                     { 
                       menu.lista.map((data,i) => { 
@@ -65,7 +64,7 @@ class Cucina extends Component {
                               <li className="piatti" key={i}>
                                 <div>
                                   <span className="name">{piatti.name}</span>
-                                  <span>{piatti.price}</span>
+                                  <span>{piatti.price} €</span>
                                 </div>
                                 <span className="ingredienti">{piatti.ingredienti}</span>
                               </li>                            
