@@ -26,8 +26,8 @@ class Cucina extends Component {
   }
  
   render() {
-    const menuData = data.menuCucina,
-          classOpen = 'open';
+    const menuData = data.menuCucina;
+    // classOpen = 'open';
   
     return (
       <div id="sitePage" className="Cucina">

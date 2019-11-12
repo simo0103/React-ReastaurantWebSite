@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { isMobileOnly } from 'react-device-detect';
 import desktopBackground from '../../images/desktop/salafreccette.png';
 import mobileBackground from '../../images/mobile/banner-mobile.png';
+import linkBackground from '../../images/desktop/bulldog.jpg';
+import { NavLink } from "react-router-dom";
+
+
 import '../../style/css/home.css';
 
 class Home extends Component {
@@ -18,16 +22,24 @@ class Home extends Component {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <ul className="secondaryMenu">
             <li>
-              <img src="#" alt="eventi" />
-              <span>eventi</span>
+              <img src={linkBackground} alt="eventi" />
+              <div className="linkOverlay">
+               <span>eventi</span> 
+              </div>
             </li>
             <li>
-              <img src="#" alt="galleria" />
-              <span>galleria</span>
+              <img src={linkBackground} alt="galleria" />
+              <div className="linkOverlay">
+                <span>galleria</span>
+              </div>
             </li>
             <li>
-              <img src="#" alt="sport" />
-              <span>sport</span>
+              <NavLink to='/sport'>
+                <img src={linkBackground} alt="sport" />
+                <div className="linkOverlay">
+                  <span>sport</span>
+                </div>
+              </NavLink>
             </li>
           </ul>
         </div>
