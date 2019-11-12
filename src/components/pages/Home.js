@@ -22,16 +22,20 @@ class Home extends Component {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <ul className="secondaryMenu">
             <li>
+            <NavLink to='/eventi'>
               <img src={linkBackground} alt="eventi" />
               <div className="linkOverlay">
                <span>eventi</span> 
               </div>
+            </NavLink>
             </li>
             <li>
-              <img src={linkBackground} alt="galleria" />
-              <div className="linkOverlay">
-                <span>galleria</span>
-              </div>
+              <NavLink to='/galleria'>
+                <img src={linkBackground} alt="galleria" />
+                <div className="linkOverlay">
+                  <span>sport</span>
+                </div>
+              </NavLink>
             </li>
             <li>
               <NavLink to='/sport'>
@@ -43,9 +47,7 @@ class Home extends Component {
             </li>
           </ul>
         </div>
-      </div>
-     
-     
+      </div>   
     </div>
 
 
