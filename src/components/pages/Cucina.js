@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import '../../style/css/main.css';
 import '../../style/css/cucina.css';
 import cucinaImg from '../../images/desktop/food.jpg';
+import arrowD from '../../images/svg/arrD.svg';
 //import arrowDown from '../../images/svg/arrD.svg';
 import data from "./menulist";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 
 class Cucina extends Component {
   
@@ -34,12 +37,12 @@ class Cucina extends Component {
        
         <div className="imgContainer">
           <img src={cucinaImg} alt="herobanner" className="heroBanner"/>
+          <AnchorLink offset={() => 100} href='#main'>
+              <img className="arrow" src={arrowD} alt="go down" onClick={this.scrollPage}/>
+           </AnchorLink>
         </div>
-        <p> Lipsum dolor sit amet 
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-          ut labore  et dolore magna aliqua. 
-        </p>
-        <div className="mainContainer">
+  
+        <div id="main" className="mainContainer">
         {/* cliccato ora : {this.state.typeClicked};
         cliccato prima : {this.state.prevClicked} */}
           <ul className="menuDynamicList">

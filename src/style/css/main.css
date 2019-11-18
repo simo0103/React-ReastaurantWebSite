@@ -8,10 +8,13 @@ button {
   min-width: 120px;
 }
 
-p {
-  text-align: center;
-  font-size: 15px;
-  line-height: 2em;
-  margin: 25px 0;
+.arrow {
+  width: 45px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

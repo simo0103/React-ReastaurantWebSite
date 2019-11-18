@@ -9,12 +9,13 @@ import Main from './Main';
 //   </div>
 // )
 class App extends Component {
+ 
   render() {
     const viewportClass = isMobileOnly ? "mobileView" : isTablet ? "tabletView" : "desktopView";
 
     return (
       <div id="App" className={ viewportClass }>
-        <NavBar />
+        <NavBar/>
         <Main />
       </div>
     );

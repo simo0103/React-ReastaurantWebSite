@@ -58,4 +58,13 @@
             }
         }
     }
+    .desktopView & {
+        ul.menuDynamicList {
+            display: flex;
+            justify-content: space-between;
+            li:not(.piatti) {
+                width: 40%;
+            }
+        }
+    }
 }

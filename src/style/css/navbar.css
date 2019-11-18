@@ -1,5 +1,5 @@
 header {
-  position: absolute;
+  position: fixed;
   z-index: 200;
   width: 100%;
   background: #000000b5;
@@ -20,6 +20,7 @@ header li {
 
 header li a {
   color: white;
+  font-size: 20px;
 }
 
 header li a.active {
@@ -37,7 +38,7 @@ header nav.desktopNav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
+  width: 30%;
   margin: 0 auto;
   height: 100px;
 }

@@ -1,37 +1,38 @@
-.desktopView .Home .content {
+.desktopView .Home .welcome.content {
   display: inline-block;
-  float: left;
-  position: relative;
 }
 
-.desktopView .Home .content .heroBanner {
+.desktopView .Home .welcome.content .heroBanner {
   position: relative;
   width: 100%;
+  height: 100vh;
 }
 
-.desktopView .Home .content img {
+.desktopView .Home .welcome.content img {
   border: 0;
   margin: 0;
   float: left;
 }
 
-.desktopView .Home .content .overlay {
+.desktopView .Home .welcome.content .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: #5a57577a;
+  height: 100vh;
+  background-color: #000000b8;
 }
 
-.desktopView .Home .content p {
-  padding: 25px;
-  color: white;
-  background-color: #000000bd;
-  text-align: center;
+.desktopView .Home .welcome.content .overlay .logo {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 30%;
 }
 
-.desktopView .Home .content ul.secondaryMenu {
+.desktopView .Home .welcome.content ul.secondaryMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,13 +44,13 @@
       justify-content: space-around;
 }
 
-.desktopView .Home .content ul.secondaryMenu li {
+.desktopView .Home .welcome.content ul.secondaryMenu li {
   width: 25%;
   border: 2px solid white;
   position: relative;
 }
 
-.desktopView .Home .content ul.secondaryMenu li .linkOverlay {
+.desktopView .Home .welcome.content ul.secondaryMenu li .linkOverlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,8 +71,51 @@
   height: 100%;
 }
 
-.desktopView .Home .content ul.secondaryMenu li .linkOverlay span {
+.desktopView .Home .welcome.content ul.secondaryMenu li .linkOverlay span {
   color: white;
   text-transform: uppercase;
+}
+
+.desktopView .Home .aboutUs {
+  background-color: #EBEAE8;
+}
+
+.desktopView .Home .aboutUs p {
+  color: black;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.desktopView .Home .gallery img.photo {
+  float: left;
+  width: 33.33%;
+}
+
+.mobileView .Home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000b8;
+}
+
+.mobileView .Home .overlay .logo {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 50%;
+}
+
+.mobileView .Home .overlay .arrow {
+  width: 20px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  cursor: pointer;
 }
 /*# sourceMappingURL=home.css.map */
