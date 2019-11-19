@@ -1,72 +1,70 @@
 .Home {
     .desktopView & {
-        .welcome.content {
-            display: inline-block;
-            .heroBanner {
-                position: relative;
-                width: 100%;
-                height: 100vh;
-            }
+        .imgContainer.content {
             img {
                 border: 0;
                 margin: 0;
                 float: left;
             }
-            .overlay {
+            .logo {
                 position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100vh;
-                background-color: #000000b8;
-                .logo {
-                    position: absolute;
-                    left: 50%;
-                    top: 30%;
-                    transform: translate(-50%,0);
-                    width: 30%;
-                }
-            }
-            
-            ul.secondaryMenu {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around; 
+                left: 50%;
+                top: 30%;
+                transform: translate(-50%,0);
+                width: 30%;
+            }          
+            // ul.secondaryMenu {
+            //     display: flex;
+            //     flex-direction: row;
+            //     justify-content: space-around; 
                 
-                li {
-                    width: 25%;
-                    border: 2px solid white;
-                    position: relative;
-                    .linkOverlay {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        span {
-                            color: white;
-                            text-transform: uppercase;
-                        }
-                    }
-                }
-            }
+            //     li {
+            //         width: 25%;
+            //         border: 2px solid white;
+            //         position: relative;
+            //         .linkOverlay {
+            //             display: flex;
+            //             flex-direction: column;
+            //             justify-content: center;
+            //             align-items: center;
+            //             position: absolute;
+            //             top: 0;
+            //             left: 0;
+            //             width: 100%;
+            //             height: 100%;
+            //             span {
+            //                 color: white;
+            //                 text-transform: uppercase;
+            //             }
+            //         }
+            //     }
+            // }
         }
         .aboutUs {
             background-color: #EBEAE8;
             p {              
                 color: black;
-                text-align: center;
-                padding: 30px 10px;
             }
         }
         .gallery {
+            display: flex;
+            justify-content: space-between;
             img.photo {
                 float: left;
-                width: 33.33%;
+                width: 33%;
+            }
+        }
+        .beerSelection {
+            p {
+                margin-bottom: 60px;
+            }
+            div {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            img.beer {
+                width: 10%;
             }
         }
     }

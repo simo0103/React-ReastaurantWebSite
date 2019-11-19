@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from "react-router-dom";
 import { isMobile } from 'react-device-detect';
+
 //sass
 import '../style/css/navbar.css';
 //images

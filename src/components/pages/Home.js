@@ -9,6 +9,15 @@ import img3 from '../../images/gallery/img3.jpg';
 import logo from '../../images/logo1bolder.png';
 import arrowD from '../../images/svg/arrD.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import beer1 from '../../images/png/ichnusa.png';
+import beer2 from '../../images/png/heineke.png';
+import beer3 from '../../images/png/erdinger.png';
+import beer4 from '../../images/png/guinness.png';
+import beer5 from '../../images/png/affligem.png';
+
+
+
+
 
 //import { NavLink } from "react-router-dom";
 
@@ -23,17 +32,32 @@ class Home extends Component {
 
     const DesktopHome = () => 
     <div id="content" className = "content">
-      <div className="aboutUs">
+      <section className="aboutUs">
         <p>Chi Siamo..<br></br>
+        <br></br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-      </div>
-      <div className="gallery">
+      </section>
+      <section className="gallery">
         <img className="photo" src={img1} alt="dragoni"/> 
         <img className="photo" src={img2} alt="dragoni"/> 
         <img className="photo" src={img3} alt="dragoni"/> 
 
-      </div>
+      </section>
+      <section className="beerSelection">
+        <p>
+            Le nostre birre alla spina
+        </p>
+        <div>
+            <img className="beer" src={beer1} alt="beer"/> 
+            <img className="beer" src={beer2} alt="beer"/> 
+            <img className="beer" src={beer3} alt="beer"/> 
+            <img className="beer" src={beer4} alt="beer"/> 
+            <img className="beer" src={beer5} alt="beer"/> 
+
+        </div>
+
+      </section>
       {/* <div className = "imgContainer">
         <img src={desktopBackground} alt="herobanner" className="heroBanner"/>
         <div className="overlay">
@@ -72,16 +96,13 @@ class Home extends Component {
     let RenderDesktopContent = () => !isMobileOnly ? <DesktopHome/> : null;
     return (
       <div id="sitePage" className="Home">
-        <div className = "welcome content">
+        <div className = "imgContainer content">
           <RenderBackgroundImg/> 
-          <div className="overlay">
+          
             <img className="logo" src={logo} alt="logo"/>
-            <AnchorLink offset={() => 100} href='#content'>
+            <AnchorLink className="arrowAnchorLink" offset={() => 100} href='#content'>
               <img className="arrow" src={arrowD} alt="go down"/>
             </AnchorLink>
-            
-          </div>
-
         </div>
        
         <RenderDesktopContent/>

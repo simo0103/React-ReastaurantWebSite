@@ -37,9 +37,9 @@ class Cucina extends Component {
        
         <div className="imgContainer">
           <img src={cucinaImg} alt="herobanner" className="heroBanner"/>
-          <AnchorLink offset={() => 100} href='#main'>
+          <AnchorLink className="arrowAnchorLink" offset={() => 100} href='#main'>
               <img className="arrow" src={arrowD} alt="go down" onClick={this.scrollPage}/>
-           </AnchorLink>
+          </AnchorLink>
         </div>
   
         <div id="main" className="mainContainer">

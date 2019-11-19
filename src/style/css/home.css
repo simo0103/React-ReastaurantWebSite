@@ -1,29 +1,10 @@
-.desktopView .Home .welcome.content {
-  display: inline-block;
-}
-
-.desktopView .Home .welcome.content .heroBanner {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-.desktopView .Home .welcome.content img {
+.desktopView .Home .imgContainer.content img {
   border: 0;
   margin: 0;
   float: left;
 }
 
-.desktopView .Home .welcome.content .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #000000b8;
-}
-
-.desktopView .Home .welcome.content .overlay .logo {
+.desktopView .Home .imgContainer.content .logo {
   position: absolute;
   left: 50%;
   top: 30%;
@@ -32,63 +13,45 @@
   width: 30%;
 }
 
-.desktopView .Home .welcome.content ul.secondaryMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.desktopView .Home .welcome.content ul.secondaryMenu li {
-  width: 25%;
-  border: 2px solid white;
-  position: relative;
-}
-
-.desktopView .Home .welcome.content ul.secondaryMenu li .linkOverlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.desktopView .Home .welcome.content ul.secondaryMenu li .linkOverlay span {
-  color: white;
-  text-transform: uppercase;
-}
-
 .desktopView .Home .aboutUs {
   background-color: #EBEAE8;
 }
 
 .desktopView .Home .aboutUs p {
   color: black;
-  text-align: center;
-  padding: 30px 10px;
+}
+
+.desktopView .Home .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .desktopView .Home .gallery img.photo {
   float: left;
-  width: 33.33%;
+  width: 33%;
+}
+
+.desktopView .Home .beerSelection p {
+  margin-bottom: 60px;
+}
+
+.desktopView .Home .beerSelection div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.desktopView .Home .beerSelection img.beer {
+  width: 10%;
 }
 
 .mobileView .Home .overlay {
