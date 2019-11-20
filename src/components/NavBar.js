@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from "react-router-dom";
 import { isMobile } from 'react-device-detect';
-
 //sass
 import '../style/css/navbar.css';
 //images
@@ -14,15 +13,29 @@ class NavBar extends Component {
     super(props);
     this.state = {
       open: false,
+      isTop: true
     };
+     
   }
+  componentDidMount() {
+    document.addEventListener('scroll', () => {
+      const isTop = window.scrollY < window.innerHeight -100;
+      if (isTop !== this.state.isTop) {
+          this.setState({ isTop })
+      }
+    });
+  }
+  
 
   render() {
 
    // var isActive = this.context.router.route.location.pathname === this.props.to;
     var classActive =  'active',
         classOpen = 'open';
-
+      
+   
+    
+     
     const MobileNav = (props) =>
         <nav className="mobileNav">
           <div className="navLogo">
@@ -58,9 +71,10 @@ class NavBar extends Component {
     </nav>
     
     let RenderNavBar = (props) => isMobile ? <MobileNav/> : <DesktopNav/>
-   
+    
     return (
-      <header>
+     
+      <header className={this.state.isTop ? '' : 'sticky'}>
         <RenderNavBar/>
       </header>
 

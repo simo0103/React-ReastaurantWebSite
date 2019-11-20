@@ -14,9 +14,7 @@ import beer2 from '../../images/png/heineke.png';
 import beer3 from '../../images/png/erdinger.png';
 import beer4 from '../../images/png/guinness.png';
 import beer5 from '../../images/png/affligem.png';
-
-
-
+import map from '../../images/png/Map.png';
 
 
 //import { NavLink } from "react-router-dom";
@@ -54,10 +52,21 @@ class Home extends Component {
             <img className="beer" src={beer3} alt="beer"/> 
             <img className="beer" src={beer4} alt="beer"/> 
             <img className="beer" src={beer5} alt="beer"/> 
-
         </div>
-
       </section>
+      <section className="doveSiamo">
+        <div>
+          <p>
+            Dove siamo:
+            <br></br>
+            Via della Repubblica 16
+            <br></br>
+            Bologna
+          </p>
+        </div>
+        <img className="map" src={map} alt="dove siamo"/> 
+      </section>
+     
       {/* <div className = "imgContainer">
         <img src={desktopBackground} alt="herobanner" className="heroBanner"/>
         <div className="overlay">

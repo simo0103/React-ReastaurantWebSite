@@ -4,6 +4,13 @@ header {
     width: 100%;
     background: #000000b5;
     top: 0;
+    &.sticky {
+        .desktopView & {
+            background: black;
+            box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.75);
+
+        }
+    }
 
     .logo {
         width: 90px;
