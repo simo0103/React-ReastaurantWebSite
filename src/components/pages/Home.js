@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
 import { isMobileOnly } from 'react-device-detect';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import CountDown  from '../utils/CountDown';
 import desktopBackground from '../../images/desktop/salafreccette.png';
 import mobileBackground from '../../images/mobile/banner-mobile.png';
+import Galleria from "./Galleria";
+import DiconodiNoi from "./DiconoDiNoi";
+import Contattaci from "./Contattaci";
+
+
 //import linkBackground from '../../images/desktop/bulldog.jpg';
 import img1 from '../../images/gallery/img1.jpg';
 import img2 from '../../images/gallery/img2.jpg';
 import img3 from '../../images/gallery/img3.jpg';
 import logo from '../../images/logo1bolder.png';
 import arrowD from '../../images/svg/arrD.svg';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import beer1 from '../../images/png/ichnusa.png';
 import beer2 from '../../images/png/heineke.png';
 import beer3 from '../../images/png/erdinger.png';
 import beer4 from '../../images/png/guinness.png';
 import beer5 from '../../images/png/affligem.png';
-import map from '../../images/png/Map.png';
 
 
 //import { NavLink } from "react-router-dom";
@@ -30,42 +35,36 @@ class Home extends Component {
 
     const DesktopHome = () => 
     <div id="content" className = "content">
-      <section className="aboutUs">
+      <div id="section" className="aboutUs">
         <p>Chi Siamo..<br></br>
         <br></br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-      </section>
-      <section className="gallery">
+      </div>
+      <div id="section" className="gallery">
         <img className="photo" src={img1} alt="dragoni"/> 
         <img className="photo" src={img2} alt="dragoni"/> 
         <img className="photo" src={img3} alt="dragoni"/> 
 
-      </section>
-      <section className="beerSelection">
+      </div>
+      <div id="section" className="beerSelection">
         <p>
             Le nostre birre alla spina
         </p>
-        <div>
+        <div>       
             <img className="beer" src={beer1} alt="beer"/> 
             <img className="beer" src={beer2} alt="beer"/> 
             <img className="beer" src={beer3} alt="beer"/> 
             <img className="beer" src={beer4} alt="beer"/> 
-            <img className="beer" src={beer5} alt="beer"/> 
+            <img className="beer" src={beer5} alt="beer"/>      
         </div>
-      </section>
-      <section className="doveSiamo">
-        <div>
-          <p>
-            Dove siamo:
-            <br></br>
-            Via della Repubblica 16
-            <br></br>
-            Bologna
-          </p>
-        </div>
-        <img className="map" src={map} alt="dove siamo"/> 
-      </section>
+        <button>VEDI IL MENU DELLE BIRRE</button>
+      </div>
+      <DiconodiNoi></DiconodiNoi>
+
+     <CountDown></CountDown>
+    <Galleria></Galleria>
+    <Contattaci></Contattaci>
      
       {/* <div className = "imgContainer">
         <img src={desktopBackground} alt="herobanner" className="heroBanner"/>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,EAAE,CAAC;EACC,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,IAAI;CAClB;;AACD,AAAA,SAAS,CAAC;EACN,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,MAAM;CAOjB;;AAVD,AAII,SAJK,CAIL,GAAG,CAAC;EACA,KAAK,EAAE,GAAG;EACV,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,KAAK;EACjB,UAAU,EAAE,KAAK;CACpB",
+    "sources": [
+        "../sass/galleria.scss"
+    ],
+    "names": [],
+    "file": "galleria.css"
+}

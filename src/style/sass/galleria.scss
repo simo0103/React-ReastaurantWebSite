@@ -1,0 +1,15 @@
+h3 {
+    text-align: center;
+    font-size: 35px;
+}
+.galleria {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    img {
+        width: 25%;
+        padding: 10px;
+        max-height: 350px;
+        object-fit: cover;
+    }
+}

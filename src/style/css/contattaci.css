@@ -1,0 +1,55 @@
+.doveSiamo, .orari, .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#section.doveSiamo {
+  background: white;
+  padding: 20px;
+}
+
+#section.doveSiamo ul li.orari {
+  width: 250px;
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+#section.doveSiamo ul .listTitle {
+  font-size: 25px;
+  padding-bottom: 10px;
+  display: block;
+  text-transform: uppercase;
+}
+
+#section.doveSiamo h3 {
+  text-align: left;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+#section.doveSiamo p {
+  text-align: left;
+  font-size: 21px;
+  text-transform: none;
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+#section.doveSiamo .address {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+#section.doveSiamo .hoursList {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+/*# sourceMappingURL=contattaci.css.map */

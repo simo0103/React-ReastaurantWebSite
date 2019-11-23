@@ -1,0 +1,47 @@
+.doveSiamo, .orari, .address {
+    display: flex;
+    justify-content: space-between;
+
+    
+    
+}
+#section.doveSiamo {
+    background: white;
+    padding: 20px;
+    ul {
+        li.orari {
+            width: 250px;
+            font-size: 20px;
+            padding: 5px 0;
+        }
+        .listTitle {
+        font-size: 25px;
+        padding-bottom: 10px;
+        display: block;
+        text-transform: uppercase;
+
+        }
+    }
+    h3 {
+        text-align: left;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        font-weight: normal;
+    }
+    p {
+        text-align: left;
+        font-size: 21px;
+        text-transform: none;
+        font-weight: normal;
+        margin: 20px 0;
+
+    }
+    .address {
+        flex: 2;  
+       
+    }
+    .hoursList {
+        flex: 1;
+    }
+}

@@ -1,0 +1,43 @@
+.countDown {
+  margin: 40px 0;
+}
+
+.countDown h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 35px;
+}
+
+.countDown .countdown-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20%;
+  margin: 0 auto;
+}
+
+.countDown .countdown-wrapper .countdown-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.countDown .countdown-wrapper .countdown-item > .number {
+  background: green;
+  color: white;
+  font-size: 36px;
+  line-height: 42px;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=countdown.css.map */
