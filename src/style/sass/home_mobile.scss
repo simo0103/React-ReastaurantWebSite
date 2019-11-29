@@ -1,0 +1,26 @@
+.mobileView .Home {
+    .logo {
+        display: none;
+    }
+
+    .aboutUs {
+        position: absolute;
+        top: 20%;
+        color: white;
+        text-align: center;
+        padding: 30px;
+        background: #000000ab;
+    }
+    .beerSelection {
+        text-align: center;
+        > div {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            img {
+                width: 30%;
+            }
+        }
+    }
+}

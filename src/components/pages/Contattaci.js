@@ -7,7 +7,7 @@ import '../../style/css/contattaci.css';
 class Contattaci extends Component {
   render() {
     return (
-      <div id="section" className="doveSiamo">
+      <div id="section contattaci" className="doveSiamo">
         <div className="hoursList">
           <ul>
             <span className="listTitle">Orari:</span>
@@ -55,7 +55,7 @@ class Contattaci extends Component {
             </p>
 
           </div>
-          <img className="map" src={map} alt="dove siamo"/> 
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11381.884697410938!2d11.35830642747802!3d44.505501572861256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4fe5ceb7ec4306c4!2sDragon%20Pub!5e0!3m2!1sen!2sit!4v1575069663973!5m2!1sen!2sit" width="100%" height="450"></iframe>
         </div>
       </div>
     );

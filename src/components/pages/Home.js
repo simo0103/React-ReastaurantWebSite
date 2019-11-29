@@ -7,7 +7,7 @@ import mobileBackground from '../../images/mobile/banner-mobile.png';
 import Galleria from "./Galleria";
 import DiconodiNoi from "./DiconoDiNoi";
 import Contattaci from "./Contattaci";
-
+import Slider from "react-slick";
 
 //import linkBackground from '../../images/desktop/bulldog.jpg';
 import img1 from '../../images/gallery/img1.jpg';
@@ -25,28 +25,67 @@ import beer5 from '../../images/png/affligem.png';
 //import { NavLink } from "react-router-dom";
 
 import '../../style/css/home.css';
+import '../../style/css/home_mobile.css';
+
+
 
 class Home extends Component {
  
   render() {
+
     const MobileImg = () => <img src={mobileBackground} alt="herobanner" className="heroBanner"/>;
     const DesktopImg = () => <img src={desktopBackground} alt="herobanner" className="heroBanner"/>;
     let RenderBackgroundImg = () => isMobileOnly ? <MobileImg/> : <DesktopImg/>;
+    var settings = {
+          dots: false,
+          infinite: true,
+          speed: 1000,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          arrows: false,
 
-    const DesktopHome = () => 
-    <div id="content" className = "content">
+      };
+    const SliderMobile = () => 
+    <div id="section" className="gallery">
+      <Slider {...settings}>
+        <img className="photo" src={img1} alt="dragoni"/> 
+        <img className="photo" src={img2} alt="dragoni"/> 
+        <img className="photo" src={img3} alt="dragoni"/> 
+
+      </Slider>
+
+    </div>
+    
+    const DesktopGallery = () => 
+    <div id="section" className="gallery">
+      <img className="photo" src={img1} alt="dragoni"/> 
+      <img className="photo" src={img2} alt="dragoni"/> 
+      <img className="photo" src={img3} alt="dragoni"/> 
+   </div>
+    
+
+    let RenderThreeImages = () => !isMobileOnly ? <DesktopGallery/> : <SliderMobile></SliderMobile>;
+    return (
+      <div id="sitePage" className="Home">
+        <div className = "imgContainer content">
+          <RenderBackgroundImg/> 
+          
+            <img className="logo" src={logo} alt="logo"/>
+            <AnchorLink className="arrowAnchorLink" offset={() => 100} href='#content'>
+              <img className="arrow" src={arrowD} alt="go down"/>
+            </AnchorLink>
+        </div>
+       
+        <div id="content" className = "content">
       <div id="section" className="aboutUs">
         <p>Chi Siamo..<br></br>
         <br></br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
-      <div id="section" className="gallery">
-        <img className="photo" src={img1} alt="dragoni"/> 
-        <img className="photo" src={img2} alt="dragoni"/> 
-        <img className="photo" src={img3} alt="dragoni"/> 
-
-      </div>
+     <RenderThreeImages/>
       <div id="section" className="beerSelection">
         <p>
             Le nostre birre alla spina
@@ -62,58 +101,11 @@ class Home extends Component {
       </div>
       <DiconodiNoi></DiconodiNoi>
 
-     <CountDown></CountDown>
-    <Galleria></Galleria>
-    <Contattaci></Contattaci>
-     
-      {/* <div className = "imgContainer">
-        <img src={desktopBackground} alt="herobanner" className="heroBanner"/>
-        <div className="overlay">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <ul className="secondaryMenu">
-            <li>
-            <NavLink to='/eventi'>
-              <img src={linkBackground} alt="eventi" />
-              <div className="linkOverlay">
-               <span>eventi</span> 
-              </div>
-            </NavLink>
-            </li>
-            <li>
-              <NavLink to='/galleria'>
-                <img src={linkBackground} alt="galleria" />
-                <div className="linkOverlay">
-                  <span>galleria</span>
-                </div>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to='/sport'>
-                <img src={linkBackground} alt="sport" />
-                <div className="linkOverlay">
-                  <span>sport</span>
-                </div>
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-      </div>    */}
+      <CountDown></CountDown>
+      <Galleria></Galleria>
+      <Contattaci></Contattaci>
     </div>
 
-
-    let RenderDesktopContent = () => !isMobileOnly ? <DesktopHome/> : null;
-    return (
-      <div id="sitePage" className="Home">
-        <div className = "imgContainer content">
-          <RenderBackgroundImg/> 
-          
-            <img className="logo" src={logo} alt="logo"/>
-            <AnchorLink className="arrowAnchorLink" offset={() => 100} href='#content'>
-              <img className="arrow" src={arrowD} alt="go down"/>
-            </AnchorLink>
-        </div>
-       
-        <RenderDesktopContent/>
       </div>
         
     );

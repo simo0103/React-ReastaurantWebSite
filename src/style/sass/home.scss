@@ -1,103 +1,58 @@
-.Home {
-    .desktopView & {
-        .imgContainer.content {
-            img {
-                border: 0;
-                margin: 0;
-                float: left;
-            }
-            .logo {
-                position: absolute;
-                left: 50%;
-                top: 30%;
-                transform: translate(-50%,0);
-                width: 30%;
-            }          
-            // ul.secondaryMenu {
-            //     display: flex;
-            //     flex-direction: row;
-            //     justify-content: space-around; 
-                
-            //     li {
-            //         width: 25%;
-            //         border: 2px solid white;
-            //         position: relative;
-            //         .linkOverlay {
-            //             display: flex;
-            //             flex-direction: column;
-            //             justify-content: center;
-            //             align-items: center;
-            //             position: absolute;
-            //             top: 0;
-            //             left: 0;
-            //             width: 100%;
-            //             height: 100%;
-            //             span {
-            //                 color: white;
-            //                 text-transform: uppercase;
-            //             }
-            //         }
-            //     }
-            // }
-        }
-        #content {
-            width: 95%;
-            margin: 0 auto;
-        }
-        .aboutUs {
-            background-color: #EBEAE8;
-            p {              
-                color: black;
-            }
-        }
-        .gallery {
-            display: flex;
-            justify-content: space-between;
-            img.photo {
-                float: left;
-                width: 33%;
-                box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+ .desktopView .Home {
+     .imgContainer.content {
+         img {
+             border: 0;
+             margin: 0;
+             float: left;
+         }
 
-            }
-        }
-        .beerSelection {
-            text-align: center;
-          
-            div {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                margin: 40px 0;
-            }
-            img.beer {
-                width: 10%;
-            }
-        }
-        
-    }
-    .mobileView & {
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            background-color: #000000b8;
-            .logo {
-                position: absolute;
-                left: 50%;
-                top: 30%;
-                transform: translate(-50%,0);
-                width: 50%;
-            }
-            .arrow {
-                width: 20px;
-                position: absolute;
-                bottom: 10%;
-                left: 50%;
-                transform: translate(-50%, 0);
-                cursor: pointer;
-            } 
-        }
-    }
-}
+         .logo {
+             position: absolute;
+             left: 50%;
+             top: 30%;
+             transform: translate(-50%, 0);
+             width: 30%;
+         }
+     }
+
+     #content {
+         width: 95%;
+         margin: 0 auto;
+     }
+
+     .aboutUs {
+         background-color: #EBEAE8;
+
+         p {
+             color: black;
+         }
+     }
+
+     .gallery {
+         display: flex;
+         justify-content: space-between;
+
+         img.photo {
+             float: left;
+             width: 33%;
+             box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+
+         }
+     }
+
+     .beerSelection {
+         text-align: center;
+
+         div {
+             display: flex;
+             justify-content: space-around;
+             align-items: center;
+             margin: 40px 0;
+         }
+
+         img.beer {
+             width: 10%;
+         }
+     }
+
+ }

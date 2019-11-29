@@ -1,0 +1,95 @@
+.mobileView header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 2000;
+}
+
+.mobileView li {
+  text-transform: uppercase;
+  padding: 20px 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.mobileView li a {
+  color: white;
+  font-size: 20px;
+}
+
+.mobileView li a.active {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
+.mobileView .navLogo {
+  width: 90vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobileView .navLogo .logo {
+  width: 70px;
+}
+
+.mobileView .navLogo #menuHandler .hamburger,
+.mobileView .navLogo #menuHandler .close {
+  width: 25px;
+}
+
+.mobileView .navLogo #menuHandler.closed .close {
+  display: none;
+}
+
+.mobileView .navLogo #menuHandler.closed .hamburger {
+  display: block;
+}
+
+.mobileView .navLogo #menuHandler.open .hamburger {
+  display: none;
+}
+
+.mobileView .navLogo #menuHandler.open .close {
+  display: block;
+}
+
+.mobileView .mobileNav ul {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobileView .mobileNav ul.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobileView .mobileNav ul li {
+  border-bottom: 1px solid whitesmoke;
+  background-color: black;
+}
+/*# sourceMappingURL=navbar_mobile.css.map */

@@ -1,30 +1,33 @@
-#section.diconodinoi {
-    font-size: 20px;
-    h3 {
-        margin-bottom: 30px;
-    }
-    .text-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: black;
-        color: white;
-        height: 300px;
-        position: relative;
-        justify-content: space-around;
-      
+.desktopView {
+    #section.diconodinoi {
+        font-size: 20px;
+        h3 {
+            margin-bottom: 30px;
         }
-    p {
-        font-family: 'Patrick Hand', cursive;
-        font-size: 25px;
-        width: 60%;
-        margin: 20px auto 0;
-        text-transform: none;
-        font-weight: normal;
-        line-height: 40px;
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: black;
+            color: white;
+            height: 300px;
+            position: relative;
+            justify-content: space-around;
+          
+            }
+        p {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 25px;
+            width: 60%;
+            margin: 20px auto 0;
+            text-transform: none;
+            font-weight: normal;
+            line-height: 40px;
+        }
+        img {
+            width: 150px;
+            
+        }
     }
-    img {
-        width: 150px;
-        
-    }
+
 }

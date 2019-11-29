@@ -1,0 +1,35 @@
+.mobileView .Home .logo {
+  display: none;
+}
+
+.mobileView .Home .aboutUs {
+  position: absolute;
+  top: 20%;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  background: #000000ab;
+}
+
+.mobileView .Home .beerSelection {
+  text-align: center;
+}
+
+.mobileView .Home .beerSelection > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobileView .Home .beerSelection > div img {
+  width: 30%;
+}
+/*# sourceMappingURL=home_mobile.css.map */

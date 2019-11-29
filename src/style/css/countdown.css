@@ -1,14 +1,14 @@
-.countDown {
+.desktopView .countDown {
   margin: 40px 0;
 }
 
-.countDown h3 {
+.desktopView .countDown h3 {
   text-align: center;
   margin-bottom: 40px;
   font-size: 35px;
 }
 
-.countDown .countdown-wrapper {
+.desktopView .countDown .countdown-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,7 +19,7 @@
   margin: 0 auto;
 }
 
-.countDown .countdown-wrapper .countdown-item {
+.desktopView .countDown .countdown-wrapper .countdown-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +32,7 @@
           align-items: center;
 }
 
-.countDown .countdown-wrapper .countdown-item > .number {
+.desktopView .countDown .countdown-wrapper .countdown-item > .number {
   background: green;
   color: white;
   font-size: 36px;

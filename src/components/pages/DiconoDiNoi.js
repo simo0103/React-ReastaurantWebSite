@@ -44,7 +44,7 @@ class DiconodiNoi extends Component {
             <div>
                 <div className="text-container">
                     <p>
-                    " Ti senti a casa
+                    " Ti senti a casa.<br></br>
 Secondo me uno dei migliori pub che ci sia a Bologna,<br></br> mangiare ottimo e buone birre sia in bottiglia che alla spina.<br></br> 
 Poi che dire i camerieri sono veramente bravi professionali e simpatici. "
                     </p>

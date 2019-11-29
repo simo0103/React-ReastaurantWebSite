@@ -1,4 +1,4 @@
-.arrowAnchorLink {
+.desktopView .arrowAnchorLink {
   position: absolute;
   bottom: 10%;
   left: 50%;
@@ -6,12 +6,12 @@
           transform: translate(-50%, 0);
 }
 
-.arrowAnchorLink .arrow {
+.desktopView .arrowAnchorLink .arrow {
   width: 45px;
   cursor: pointer;
 }
 
-.imgContainer {
+.desktopView .imgContainer {
   display: inline-block;
   height: 75vh;
   background-color: black;
@@ -19,7 +19,7 @@
   position: relative;
 }
 
-.heroBanner {
+.desktopView .heroBanner {
   position: relative;
   width: 100%;
   height: 75vh;
@@ -28,19 +28,19 @@
   opacity: 0.4;
 }
 
-#section {
+.desktopView #section {
   margin: 40px 0;
   padding: 40px 0;
 }
 
-#section p {
+.desktopView #section p {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
 }
 
-button {
+.desktopView button {
   background-color: #d81c36;
   border: 3px solid black;
   color: white;
@@ -51,11 +51,40 @@ button {
   cursor: pointer;
 }
 
-button:focus {
+.desktopView button:focus {
   outline: none;
 }
 
-button:hover {
+.desktopView button:hover {
   background-color: #f31231;
+}
+
+.mobileView .imgContainer {
+  display: inline-block;
+  height: 75vh;
+  background-color: black;
+  width: 100%;
+  position: relative;
+}
+
+.mobileView .heroBanner {
+  width: 100%;
+  height: 75vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.4;
+}
+
+.mobileView .arrowAnchorLink {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.mobileView .arrowAnchorLink .arrow {
+  width: 35px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

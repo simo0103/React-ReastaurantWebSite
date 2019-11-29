@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { isMobileOnly, isTablet } from 'react-device-detect';
 import NavBar from './NavBar';
 import Main from './Main';
+import Footer from './Footer';
+
 // const App = () => (
 //   <div>
 //     <Header />
@@ -17,9 +19,12 @@ class App extends Component {
       <div id="App" className={ viewportClass }>
         <NavBar/>
         <Main />
+        <Footer />
+
       </div>
     );
   }
 }
 
 export default App;
+;
